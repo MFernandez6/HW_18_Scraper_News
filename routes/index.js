@@ -18,7 +18,7 @@ router.get("/theverge", function(req, res) {
         var titlesArray = [];
 
         $(".c-entry-box--compact__title").each(function(i, element){
-            var result{};
+            var result = {};
 
             result.title = $(this)
             .children("a")

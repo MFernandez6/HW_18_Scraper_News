@@ -13,7 +13,7 @@ router.get("/", function(req, res) {
 });
 
 router.get("/theverge", function(req, res) {
-    request("https://www.theverge.com", function(error, response, html) {
+    request("https://www.theverge.com/", function(error, response, html) {
         var $ = cheerio.load(html);
         var titlesArray = [];
 
